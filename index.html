@@ -1,121 +1,41 @@
-<!DOCTYPE html>
-<html lang="cs">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Landing Page - Dropshipping</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0; padding: 0;
-      background: #f9f9f9;
-      color: #333;
-    }
-    .container {
-      max-width: 1000px;
-      margin: 40px auto;
-      padding: 0 20px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
-    }
-    .text-section {
-      flex: 1;
-    }
-    h1 {
-      font-size: 2.4rem;
-      margin-bottom: 15px;
-      line-height: 1.2;
-    }
-    p.lead {
-      font-size: 1.2rem;
-      margin-bottom: 25px;
-      line-height: 1.4;
-      color: #555;
-    }
-    .scrolling-features {
-      background: #fff;
-      padding: 15px 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgb(0 0 0 / 0.1);
-      overflow: hidden;
-      max-width: 350px;
-      font-weight: 600;
-      font-size: 1rem;
-      color: #2a9d8f;
-      margin-bottom: 30px;
-      height: 40px;
-      position: relative;
-    }
-    .features-wrapper {
-      display: flex;
-      animation: scroll-left 12s linear infinite;
-      gap: 40px;
-      white-space: nowrap;
-      position: absolute;
-      will-change: transform;
-    }
-    @keyframes scroll-left {
-      0% { transform: translateX(100%); }
-      100% { transform: translateX(-100%); }
-    }
-    .feature-item {
-      white-space: nowrap;
-    }
-    .image-section {
-      flex: 1;
-      max-width: 450px;
-    }
-    .image-section img {
-      max-width: 100%;
-      border-radius: 10px;
-      box-shadow: 0 8px 20px rgb(0 0 0 / 0.15);
-      display: block;
-    }
-    @media (max-width: 768px) {
-      .container {
-        flex-direction: column;
-        text-align: center;
-      }
-      .image-section {
-        max-width: 80%;
-        margin: 0 auto;
-      }
-      .scrolling-features {
-        max-width: 100%;
-        margin: 20px auto;
-      }
-    }
-  </style>
-</head>
-<body>
-  <section class="container">
-    <div class="text-section">
-      <h1>Jak vydělávám 8343+ Kč denně za 1-2 hodiny práce on-line, s digitálním Dropshippingem, zatímco za mě A.I. dělá 90% práce.</h1>
-      
-      <div class="scrolling-features" aria-label="Scrolling benefits">
-        <div class="features-wrapper" aria-hidden="true">
-          <span class="feature-item">100% zisky</span>
-          <span class="feature-item">Svoboda práce odkudkoliv</span>
-          <span class="feature-item">Minimální časová náročnost</span>
-          <span class="feature-item">Žádné sklady ani zásoby</span>
-          <span class="feature-item">Automatizace s A.I.</span>
-          <span class="feature-item">100% zisky</span> <!-- opakování pro plynulost -->
-          <span class="feature-item">Svoboda práce odkudkoliv</span>
-          <span class="feature-item">Minimální časová náročnost</span>
-          <span class="feature-item">Žádné sklady ani zásoby</span>
-          <span class="feature-item">Automatizace s A.I.</span>
+import React from "react";
+
+export default function LandingPage() {
+  return (
+    <div style={{ maxWidth: "900px", margin: "0 auto", padding: "20px", fontFamily: "Arial, sans-serif" }}>
+      {/* Hlavní nadpis */}
+      <h1 style={{ fontSize: "2rem", fontWeight: "700", marginBottom: "1rem" }}>
+        Jak vydělávám 8343+ Kč denně za 1-2 hodiny práce on-line, s digitálním Dropshippingem, zatímco za mě A.I. dělá 90% práce.
+      </h1>
+
+      {/* Podnadpis */}
+      <p style={{ fontSize: "1.25rem", marginBottom: "2rem", lineHeight: "1.4" }}>
+        Naučím tě krok po kroku, jak si vytvořit pasivní příjem online bez nutnosti mít sklad a řešit zásoby.
+      </p>
+
+      {/* Sekce s textem vlevo a obrázkem vpravo */}
+      <div style={{ display: "flex", alignItems: "center", gap: "20px" }}>
+        {/* Textová část */}
+        <div style={{ flex: "1" }}>
+          <p style={{ fontSize: "1rem", lineHeight: "1.5" }}>
+            • 100% zisky z prodeje<br />
+            • Svoboda práce odkudkoliv<br />
+            • Žádné sklady ani zásoby<br />
+            • Podpora AI technologií<br />
+            • Rychlé nastartování podnikání
+          </p>
+        </div>
+
+        {/* Obrázek vpravo */}
+        <div style={{ flex: "1" }}>
+          <img
+            src="https://profitakcelerator.cz/wp-content/uploads/2023/07/dropshipping.png"
+            alt="Dropshipping a AI"
+            style={{ maxWidth: "100%", borderRadius: "10px" }}
+          />
         </div>
       </div>
+    </div>
+  );
+}
 
-      <p class="lead">
-        Přidej se ke mně a nauč se, jak na digitální Dropshipping, který vydělává, i když spíš nebo se věnuješ jiným věcem. Bez rizika a velkých investic.
-      </p>
-    </div>
-    <div class="image-section">
-      <img src="https://profitakcelerator.cz/wp-content/uploads/2023/06/digital-dropshipping.jpg" alt="Digitální Dropshipping" />
-    </div>
-  </section>
-</body>
-</html>
