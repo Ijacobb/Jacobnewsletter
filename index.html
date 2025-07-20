@@ -47,6 +47,9 @@ font-size: 50px;
 .f67{
 font-size: 67px;
 }
+.f41{
+font-size: 67px;
+}
 #text-2, #text-4{color: #fff;}
 #text-3, #text-5,  #text-13,  #text-15, .colored{color: var(--main-color);}
 #text-6, #text-25, #text-30{color: rgb(0, 255, 162); font-weight: 600;}
@@ -548,6 +551,9 @@ html, body {
 .body-bg-image {
   z-index: -1 !important; /* lower it */
 }
+h1, h2{
+  font-weight: lighter;
+}
 </style>
 </head>
 <body>
@@ -556,12 +562,12 @@ html, body {
 <p id="text-1" class="f15 letter-spacing-1 oswald margin-top color-ffffffcc uppercase slide-down">📣 ATTENTION! <strong>FREE COMMUNITY</strong> REVEALS:</p>
 </div>
 <div>
-<h1 class="just-dance-bold f67 margin-top uppercase"><font id="text-2">How I built an</font><font id="text-3"> online income </font><font id="text-4"> with digital dropshipping and theme pages,</font><font id="text-5"> working only 1 to 2 hours a day</font><font> no inventory or personal brand.</font></h1>
+<h1 class="just-dance-bold f41 margin-top uppercase"><font id="text-2">How I built an</font><font id="text-3"> online income </font><font id="text-4"> with digital dropshipping and theme pages,</font><font id="text-5"> working only 1 to 2 hours a day</font><font> no inventory or personal brand.</font></h1>
 </div>
 <div class="w-750">
 <div>
 <p class="f20 inter margin-top w-750 color-ffffffcc"><font id="text-6">3 Steps how you can do it yourself →</font><font id="text-7"><strong> WITHOUT</strong> showing your face, spending hours editing, or needing any technical skills.</font></p>
-<a data-formkit-toggle="cb09a93a63" href="https://zenluxury-newsletter.kit.com/cb09a93a63">
+<a data-formkit-toggle="cb09a93a63" href="https://www.mailerlite.com/signup">
 <button class="slide-button f15 margin-top slide-down">
 <div class="content">
 <div class="icon">
@@ -569,7 +575,7 @@ html, body {
 <path d="M10 17l5-5-5-5v10z"/>
 </svg>
 </div>
-<a data-formkit-toggle="cb09a93a63" class="text" href="https://zenluxury-newsletter.kit.com/cb09a93a63">Sign up 100% FREE</a>
+<a data-formkit-toggle="cb09a93a63" class="text" href="https://www.mailerlite.com/signup">Sign up 100% FREE</a>
 </div>
 </button>
 </a>
@@ -649,7 +655,22 @@ html, body {
 <p><font>✅</font><font id="text-30">Get instant access</font><font id="text-31"> to free tools, tips, and proven systems — all from someone actually doing it, not just talking about it.</font></p>
 </div>
 </div>
-<button class="slide-button f15 margin-top slide-down">
+
+
+<button class="slide-button f15 margin-top slide-down" onclick="ml('show', '1eobF3', true)">
+<div class="content">
+<div class="icon">
+<svg viewBox="0 0 24 24">
+<path d="M10 17l5-5-5-5v10z"/>
+</svg>
+</div>
+<a data-formkit-toggle="cb09a93a63" class="text"  href="https://www.mailerlite.com/signup">Sign up 100% FREE</a>
+</div>
+</button>
+
+
+
+<!-- <button class="slide-button f15 margin-top slide-down">
 <div class="content">
 <div class="icon">
 <svg viewBox="0 0 24 24">
@@ -658,7 +679,7 @@ html, body {
 </div>
 <button class="ml-onclick-form" onclick="ml('show', '1eobF3', true)">Click here to show form</button>
 </div>
-</button>
+</button> -->
 <br><br>
 <!-- <div class="dropdowns-container f15 inter slide-up">
 <div class="dropdown">
@@ -749,10 +770,13 @@ icon.textContent = dropdown.classList.contains('active') ? '×' : '+';
 
 <!-- MailerLite Universal -->
 <script>
-    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+     (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
     .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
     n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
-    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+    (window,document,'script','https://www.mailerlite.com/signup','ml');
     ml('account', '1509703');
 </script>
+
+
 <!-- End MailerLite Universal -->
+</body>
