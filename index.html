@@ -12,6 +12,23 @@
   --main-color: #153bd3;
     /* ------------------------------------------------------------------------------------------------------------ */
 }
+.mobile-headline {
+  display: none;
+}
+.desktop-headline {
+  display: inline;
+}
+
+@media (max-width: 750px) {
+  .desktop-headline {
+    display: none !important;
+  }
+  .mobile-headline {
+    display: inline !important;
+  }
+}
+
+
 *{
 padding: 0;
 margin: 0;
@@ -562,18 +579,55 @@ h1, h2{
 <p id="text-1" class="f15 letter-spacing-1 oswald margin-top color-ffffffcc uppercase slide-down">📣 ATTENTION! <strong>FREE COMMUNITY</strong> REVEALS:</p>
 </div>
 <div>
-<h1 class="just-dance-bold f41 margin-top uppercase"><font id="text-2">How I built an</font><font id="text-3"> online income </font><font id="text-4"> with digital dropshipping and theme pages,</font><font id="text-5"> working only 1 to 2 hours a day</font><font> no inventory or personal brand.</font></h1>
+  <h1 class="just-dance-bold f41 margin-top uppercase responsive-headline">
+  <span class="desktop-headline">
+    <font id="text-2">How I built an</font>
+    <font id="text-3"> online income </font>
+    <font id="text-4"> with digital dropshipping and theme pages,</font>
+    <font id="text-5"> working only 1 to 2 hours a day</font>
+    <font> no inventory or personal brand.</font>
+  </span>
+  <span class="mobile-headline">
+    <font id="text-m1">How I built an online income</font><br>
+    <font id="text-m2">in just 1–2 hrs/day —</font><br>
+    <font id="text-m3">No face, brand or inventory</font>
+  </span>
+</h1>
+
+<!-- <h1 class="just-dance-bold f41 margin-top uppercase"><font id="text-2">How I built an</font><font id="text-3"> online income </font><font id="text-4"> with digital dropshipping and theme pages,</font><font id="text-5"> working only 1 to 2 hours a day</font><font> no inventory or personal brand.</font></h1> -->
 </div>
 <div class="w-750">
 <div>
 <p class="f20 inter margin-top w-750 color-ffffffcc"><font id="text-6">3 Steps how you can do it yourself →</font><font id="text-7"><strong> WITHOUT</strong> showing your face, spending hours editing, or needing any technical skills.</font></p>
-<button class="ml-onclick-form" onclick="ml('show', '1eobF3', true)">Click here to show form</button>
+<!-- <a data-formkit-toggle="cb09a93a63" href="https://zenluxury-newsletter.kit.com/cb09a93a63">
+<button class="slide-button f15 margin-top slide-down">
+<div class="content">
+<div class="icon">
+<svg viewBox="0 0 24 24">
+<path d="M10 17l5-5-5-5v10z"/>
 </svg>
 </div>
-<a data-formkit-toggle="cb09a93a63" class="text" href="https://www.mailerlite.com/signup">Sign up 100% FREE</a>
+<a data-formkit-toggle="cb09a93a63" class="text" href="https://zenluxury-newsletter.kit.com/cb09a93a63">Sign up 100% FREE</a>
 </div>
 </button>
-</a>
+</a> -->
+
+<button 
+  class="slide-button f15 margin-top slide-down" 
+  onclick="ml('show', 'cb09a93a63', true)" 
+  type="button"
+>
+  <div class="content">
+    <div class="icon">
+      <svg viewBox="0 0 24 24">
+        <path d="M10 17l5-5-5-5v10z"/>
+      </svg>
+    </div>
+    <div class="text">Sign up 100% FREE</div>
+  </div>
+</button>
+
+
 </div>
 
 <div class="slider-container oswald margin-top color-ffffffcc f15">
@@ -652,15 +706,29 @@ h1, h2{
 </div>
 
 
-<button class="slide-button f15 margin-top slide-down" onclick="ml('show', '1eobF3', true)">
+<!-- <button class="slide-button f15 margin-top slide-down" onclick="ml('show', '1eobF3', true)">
 <div class="content">
 <div class="icon">
 <svg viewBox="0 0 24 24">
 <path d="M10 17l5-5-5-5v10z"/>
 </svg>
 </div>
-<a data-formkit-toggle="cb09a93a63" class="text"  href="https://www.mailerlite.com/signup">Sign up 100% FREE</a>
+<a data-formkit-toggle="cb09a93a63" class="text"  href="https://zenluxury-newsletter.kit.com/cb09a93a63">Sign up 100% FREE</a>
 </div>
+</button> -->
+<button 
+  class="slide-button f15 margin-top slide-down" 
+  onclick="ml('show', 'cb09a93a63', true)" 
+  type="button"
+>
+  <div class="content">
+    <div class="icon">
+      <svg viewBox="0 0 24 24">
+        <path d="M10 17l5-5-5-5v10z"/>
+      </svg>
+    </div>
+    <div class="text">Sign up 100% FREE</div>
+  </div>
 </button>
 
 
@@ -764,14 +832,27 @@ icon.textContent = dropdown.classList.contains('active') ? '×' : '+';
 
 
 <!-- MailerLite Universal -->
-<script>
+<!-- <script>
      (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
     .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
     n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
-    (window,document,'script','https://www.mailerlite.com/signup','ml');
+    (window,document,'script','https://zenluxury-newsletter.kit.com/cb09a93a63','ml');
     ml('account', '1509703');
-</script>
+</script> -->
 
 
 <!-- End MailerLite Universal -->
+
+<!-- MailerLite Universal Script -->
+<script>
+  (function(w,d,e,u,f,l,n){
+    w[f]=w[f]||function(){(w[f].q=w[f].q||[]).push(arguments);},
+    l=d.createElement(e),l.async=1,l.src=u,
+    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);
+  })(window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+
+  ml('account', '1509703'); // Your MailerLite account ID
+</script>
+
+
 </body>
