@@ -116,6 +116,7 @@ font-family: Oswald, sans-serif;
 }
 .just-dance-bold{
 font-family: Just Dance Bold;
+font-weight: 300;
 }
 .inter{
 font-family: 'Inter', sans-serif;
@@ -361,7 +362,6 @@ max-width: 100%;
 }
 }
 
-
 @media (max-width: 900px) {
 .mbox1{
 width: 90%;
@@ -369,7 +369,7 @@ margin: 0 auto;
 flex-direction: column-reverse;
 justify-content: flex-end;
 align-items: top;
-height: 1050px;
+height: 900px;
 border-radius: 30px;
 }
 .mbox2{
@@ -397,6 +397,9 @@ margin: 0 auto;
 }
 
 @media (max-width: 750px) {
+.mbox1{
+height: 700px;
+}
 #text-1{
 padding: 4px 2px !important;
 margin-top: 0px !important;
@@ -497,7 +500,11 @@ margin-top: 15px;
 }
 }
 
-
+@media (max-width: 500px) {
+  .mbox1{
+height: 870px;
+}
+}
 
 
 @keyframes slide-down {
@@ -561,18 +568,20 @@ html, body {
 <div class="w-750">
 <div>
 <p class="f20 inter margin-top w-750 color-ffffffcc"><font id="text-6">3 Steps how you can do it yourself →</font><font id="text-7"><strong> WITHOUT</strong> showing your face, spending hours editing, or needing any technical skills.</font></p>
-<a data-formkit-toggle="cb09a93a63" href="https://zenluxury-newsletter.kit.com/cb09a93a63">
-<button class="slide-button f15 margin-top slide-down">
+<!-- <a data-formkit-toggle="cb09a93a63" href="https://zenluxury-newsletter.kit.com/cb09a93a63"> -->
+<button class="slide-button f15 margin-top slide-down ml-onclick-form" onclick="ml('show', '1eobF3', true)">
 <div class="content">
 <div class="icon">
 <svg viewBox="0 0 24 24">
 <path d="M10 17l5-5-5-5v10z"/>
 </svg>
 </div>
-<a data-formkit-toggle="cb09a93a63" class="text" href="https://zenluxury-newsletter.kit.com/cb09a93a63">Sign up 100% FREE</a>
+
+Sign up 100% FREE
+<!-- <a data-formkit-toggle="cb09a93a63" class="text" href="https://zenluxury-newsletter.kit.com/cb09a93a63">Sign up 100% FREE</a> -->
 </div>
 </button>
-</a>
+<!-- </a> -->
 </div>
 
 <div class="slider-container oswald margin-top color-ffffffcc f15">
@@ -649,14 +658,15 @@ html, body {
 <p><font>✅</font><font id="text-30">Get instant access</font><font id="text-31"> to free tools, tips, and proven systems — all from someone actually doing it, not just talking about it.</font></p>
 </div>
 </div>
-<button class="slide-button f15 margin-top slide-down">
+<button class="slide-button f15 margin-top slide-down ml-onclick-form" onclick="ml('show', '1eobF3', true)">
 <div class="content">
 <div class="icon">
 <svg viewBox="0 0 24 24">
 <path d="M10 17l5-5-5-5v10z"/>
 </svg>
 </div>
-<a data-formkit-toggle="cb09a93a63" class="text" href="https://zenluxury-newsletter.kit.com/cb09a93a63">Sign up 100% FREE</a>
+Sign up 100% FREE
+<!-- <a data-formkit-toggle="cb09a93a63" class="text" href="https://zenluxury-newsletter.kit.com/cb09a93a63">Sign up 100% FREE</a> -->
 </div>
 </button>
 <br><br>
@@ -746,8 +756,16 @@ icon.textContent = dropdown.classList.contains('active') ? '×' : '+';
 });
 </script>
 
+<script>
+    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+    .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+    ml('account', '1509703');
+</script>
+
 
 <!-- ConvertKit Signup Form -->
-<script async data-uid="cb09a93a63" src="https://zenluxury-newsletter.kit.com/cb09a93a63/index.js"></script>
+<!-- <script async data-uid="cb09a93a63" src="https://zenluxury-newsletter.kit.com/cb09a93a63/index.js"></script> -->
 </body>
 </html>
