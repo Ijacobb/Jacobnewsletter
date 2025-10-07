@@ -199,7 +199,8 @@
       padding: 0 22px;
       border-radius: 14px;
       border: 1px solid #1a1a1a;
-      background: #ffffff;
+
+      background-color: rgb(0, 255, 162);
       color: #000;
       cursor: pointer;
       overflow: hidden;
@@ -211,7 +212,8 @@
       transform: translateY(1px);
     }
 
-    .slide-button:hover {
+    .slide-button:hover,
+    .slide-button:focus {
       box-shadow: 0 0 0 2px rgba(0, 255, 162, .25), 0 0 34px rgba(0, 255, 162, .45);
       background: #fff;
     }
@@ -226,7 +228,7 @@
 
     .slide-button .icon {
       position: absolute;
-      right: 10px;
+      right: 40px;
       display: inline-flex;
       align-items: center;
       justify-content: center;
@@ -238,7 +240,7 @@
     }
 
     .slide-button:hover .icon {
-      transform: translateX(3px);
+      transform: translateX(33px);
     }
 
     .slide-button svg {
