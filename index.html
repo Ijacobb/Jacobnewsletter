@@ -189,65 +189,66 @@
     }
 
     /* ===== CTA button rework (match screenshots) ===== */
-    .slide-button {
-      position: relative;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 340px;
-      height: 56px;
-      padding: 0 22px;
-      border-radius: 14px;
-      border: 1px solid #1a1a1a;
-      color: #000;
-      cursor: pointer;
-      overflow: hidden;
-      box-shadow: 0 0 0 2px rgba(0, 255, 162, .15), 0 0 22px rgba(0, 255, 162, .25);
-      transition: transform .08s ease, box-shadow .25s ease, background .25s ease;
-    }
+.slide-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 340px;
+  height: 56px;
+  padding: 0 22px;
+  border-radius: 14px;
+  border: 1px solid #1a1a1a;
+  color: #000;
+  background: #00ffa2; /* zelené tlačítko */
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: 0 0 0 2px rgba(0, 255, 162, .15), 0 0 22px rgba(0, 255, 162, .25);
+  transition: transform .08s ease, box-shadow .25s ease, background .25s ease;
+}
 
-    .slide-button:active {
-      transform: translateY(1px);
-    }
+.slide-button:active {
+  background: #fff; /* po kliknutí zbělá */
+  transform: translateY(1px);
+}
 
-    .slide-button:hover,
-    .slide-button:focus {
-      box-shadow: 0 0 0 2px rgba(0, 255, 162, .25), 0 0 34px rgba(0, 255, 162, .45);
-      background: #fff;
-    }
+.slide-button:hover,
+.slide-button:focus {
+  box-shadow: 0 0 0 2px rgba(0, 255, 162, .25), 0 0 34px rgba(0, 255, 162, .45);
+  background: #00ffa2; /* zůstává zelené při hoveru */
+}
 
-    .slide-button .text {
-      font-weight: 700;
-      letter-spacing: .2px;
-      text-decoration: none;
-      color: #000;
-      line-height: 1;
-    }
+.slide-button .text {
+  font-weight: 700;
+  letter-spacing: .2px;
+  text-decoration: none;
+  color: #000;
+  line-height: 1;
+}
 
-    .slide-button .icon {
-      position: absolute;
-      left: 20px;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 36px;
-      height: 36px;
-      border-radius: 999px;
-      background: #000;
-      transition: transform .25s ease;
-    }
+.slide-button .icon {
+  position: absolute;
+  left: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  background: #000;
+  transition: transform .25s ease;
+}
 
+.slide-button:hover .icon,
+.slide-button:focus .icon {
+  transform: translateX(250px);
+}
 
-    .slide-button:hover .icon,
-    .slide-button:focus .icon {
-      transform: translateX(250px);
-    }
-
-    .slide-button svg {
-      width: 18px;
-      height: 18px;
-      fill: #fff
-    }
+.slide-button svg {
+  width: 18px;
+  height: 18px;
+  fill: #fff;
+}
 
     /* ===== Scroller ===== */
     .slider-container {
